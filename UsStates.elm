@@ -8,21 +8,16 @@ module UsStates (fromAbbr, toAbbr) where
 -}
 
 import Char
+import CapitalizeWord
 import Dict
 import StatesAndAbbrs
 import String
 
 
-capitalizeFirstLetter : String -> String
-capitalizeFirstLetter word =
-  (String.slice 1 (String.length word) word)
-    |> (++) (String.toUpper (String.slice 0 1 word))
-
-
 capitalizeWords : String -> String
 capitalizeWords sentence =
   String.words sentence
-    |> List.map (\word -> (capitalizeFirstLetter word))
+    |> List.map (\word -> (CapitalizeWord.make word))
     |> String.join " "
 
 
