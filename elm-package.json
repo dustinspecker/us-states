@@ -1,0 +1,18 @@
+{
+    "version": "1.0.0",
+    "summary": "Get US state name from an abbrevation and vice versa",
+    "repository": "https://github.com/dustinspecker/us-states.git",
+    "license": "MIT",
+    "source-directories": [
+        "."
+    ],
+    "exposed-modules": [
+      "UsStates"
+    ],
+    "dependencies": {
+        "deadfoxygrandpa/elm-test": "3.1.1 <= v < 4.0.0",
+        "elm-lang/core": "3.0.0 <= v < 4.0.0",
+        "laszlopandy/elm-console": "1.1.0 <= v < 2.0.0"
+    },
+    "elm-version": "0.16.0 <= v < 0.17.0"
+}
