@@ -1,6 +1,7 @@
 module StatesAndAbbrs (withAbbrKeys, withStateKeys) where
 
 import Dict
+import DictKeyValues
 
 
 statesAndAbbrsList : List ( String, String )
@@ -66,4 +67,4 @@ withAbbrKeys =
 
 withStateKeys : Dict.Dict String String
 withStateKeys =
-  Dict.fromList (List.map (\( abbr, name ) -> ( name, abbr )) statesAndAbbrsList)
+  DictKeyValues.swap withAbbrKeys
