@@ -1,4 +1,4 @@
-# UsStates [![Build Status](https://travis-ci.org/dustinspecker/us-states.svg?branch=master)](https://travis-ci.org/dustinspecker/us-states)
+# UsStates [![Build Status](https://travis-ci.org/dustinspecker/us-states.svg?branch=master)](https://travis-ci.org/dustinspecker/us-states) [![Elm Docs](https://img.shields.io/badge/elm-docs-brightgreen.svg)](http://package.elm-lang.org/packages/dustinspecker/us-states/latest)
 > Get US state name from an abbrevation and vice versa.
 
 ## Install
