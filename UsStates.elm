@@ -24,8 +24,8 @@ capitalizeWords sentence =
 {-| Get state name from abbrevation
 
     fromAbbr "ZZ" -- Nothing
-    fromAbbr "mo" -- "Missouri"
-    fromAbbr "MO" -- "Missouri"
+    fromAbbr "mo" -- Just "Missouri"
+    fromAbbr "MO" -- Just "Missouri"
 
 -}
 fromAbbr : String -> Maybe String
@@ -45,8 +45,8 @@ fromAbbr abbr =
 {-| Get abbrevation from state name
 
     toAbbr "Cow" -- Nothing
-    toAbbr "missouri" -- "MO"
-    toAbbr "Missouri" -- "MO"
+    toAbbr "missouri" -- Just "MO"
+    toAbbr "Missouri" -- Just "MO"
 
 -}
 toAbbr : String -> Maybe String
